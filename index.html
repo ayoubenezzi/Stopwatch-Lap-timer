@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lap Stopwatch</title>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <main class="container">
+      <h1>Stopwatch</h1>
+      <h2>Lap Timer</h2>
+      <p class="lap-timer">
+        <span id="minutes">00</span>:<span id="seconds">00</span>:<span
+          id="milliseconds"
+          >00</span
+        >
+      </p>
+      <div class="controls">
+        <button id="start-btn" class="btn green btn-large">Start</button>
+        <button id="stop-btn" class="btn red btn-large">Stop</button>
+        <button id="reset-btn" class="btn blue btn-large">Reset</button>
+      </div>
+      <ul id="laps" class="laps-container"></ul>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
